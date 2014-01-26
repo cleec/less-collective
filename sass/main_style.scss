@@ -1,0 +1,529 @@
+@import 'mixins';
+@import 'colors';
+@import 'bourbon/bourbon';
+
+/*
+ * HTML5 Boilerplate
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html{
+	background: #000;
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+   
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+img {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+input:focus{
+	outline: 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.grid-pad {
+	padding: 20px 0 0px 20px;
+}
+
+.grid-pad > [class*='col-']:last-of-type {
+	padding-right: 20px;
+}
+
+.push-right {
+	float: right;
+}
+
+/* === BACKGROUND === */
+
+
+.dark-bg{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.light-bg{
+	background-color:#dbdbdb;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* === NAV === */
+
+nav.top-bar{
+
+	margin: 100px auto 0;
+
+}
+
+nav {    
+    width: 100%;  
+  	font-family: "proxima-nova", sans-serif;
+	color: #dbdbdb;
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	font-weight: 800;
+	text-transform: uppercase; 
+    position: relative;  
+ 
+}
+
+nav ul{
+	padding: 0;
+	margin: 15px auto;
+	width: 100px; 
+	
+}
+
+nav li{
+	float: left;
+	display: inline;
+	width: 100%;
+}
+
+li.nav-item{
+	padding-top: 9px;
+}
+
+nav a {  
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	width: 40px;
+    } 
+   
+
+
+.lc-icon{
+   margin: 5px auto;
+   width: 100%;
+}
+
+
+/* === HEADER TEXT === */
+
+
+h1.lc-text{
+	display: block;
+	width: 100%;
+	color: #dbdbdb;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 4em;
+	text-align: center;
+	margin: 40px auto 15px;
+}
+
+
+h2{
+	width: 100%;
+	margin: 150px auto 0;
+	text-align: center;
+	font-family: "proxima-nova", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 1em;
+	color: #dbdbdb;
+}
+
+h2 > span{
+	font-family: "proxima-nova", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 1em;
+	color: #dbdbdb;
+}
+
+
+
+p.intro{
+	width: 70%;
+	margin: 0px auto;
+	text-align: center;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.8em;
+	color: #dbdbdb;
+}
+
+a.twitter{
+
+	margin-right:40px;
+	text-align: center;
+	font-family: "proxima-nova", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 1em;
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+.border{
+	border: 1px dashed red;
+}
+
+
+section{
+	width:70%;
+	background-color: blue;
+	height: 150px;
+}
+
+/* === MailChimp === */
+
+
+.connect {
+	
+	margin: 35px auto;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
+	align-items: center;
+	justify-content: center;
+	
+}
+
+form{
+	display: inline;
+	color: #dbdbdb;
+	margin: 0;
+	width: inherit;
+}
+
+.connect input{
+	font-family: "proxima-nova", sans-serif;
+	border: 3px solid #dbdbdb;
+	background: transparent;
+	padding: 8px 8px;
+	
+	&[type="submit"]{
+		font-family: "proxima-nova", sans-serif;
+		background: #dbdbdb;
+		padding: 8px 8px;
+	}
+	
+	&[type="email"] {
+		color: #dbdbdb;
+	}
+	
+	&:focus{
+		font-family: "proxima-nova", sans-serif;
+		border: 3px solid #fff;
+		background: transparent;
+		padding: 8px 8px;
+	}
+	
+	&[type="submit"]:focus{
+		font-family: "proxima-nova", sans-serif;
+		background: #fff;
+		padding: 8px 8px;
+	}
+
+}
+
+
+/* === MEDIA QUERIES === */
+
+@media screen and (max-width: 599px) {
+	
+	nav.top-bar{
+		margin: 50px auto 0;
+	}
+
+	.grid{
+		max-width: 599px;
+		min-width: 200px;
+	}
+	h1.lc-text{
+		font-size: 2em;
+	}
+	h2{
+		width: 100%;
+		margin: 50px auto 8px;
+	}
+
+	a.twitter{
+		margin:0px auto 10px;
+	}
+	
+	.connect{
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		
+		input[type="submit"]{
+			float: right;
+			margin: 10px 3px 0 0 ;
+		}
+	}
+	
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
