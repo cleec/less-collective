@@ -282,9 +282,7 @@ form{
 	padding: 8px 8px;
 	
 	&[type="submit"]{
-		font-family: "proxima-nova", sans-serif;
-		background: #dbdbdb;
-		padding: 8px 8px;
+		background: #dbdbdb;	
 	}
 	
 	&[type="email"] {
@@ -292,16 +290,12 @@ form{
 	}
 	
 	&:focus{
-		font-family: "proxima-nova", sans-serif;
 		border: 3px solid #fff;
-		background: transparent;
-		padding: 8px 8px;
+		background: transparent;		
 	}
 	
 	&[type="submit"]:focus{
-		font-family: "proxima-nova", sans-serif;
 		background: #fff;
-		padding: 8px 8px;
 	}
 
 }
@@ -335,11 +329,24 @@ form{
 		-webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 		
-		input[type="submit"]{
-			float: right;
-			margin: 10px 3px 0 0 ;
-		}
+		form {
+			padding: 0 5px;
+			
+			input[type="submit"] {
+				padding: 8px 4px;
+			}
+			
+			input[type="email"] {
+				width: 160px;
+			}
+		}		
+
 	}
+	
+}
+
+@media screen and (max-width: 328px){
+	
 	
 }
 
