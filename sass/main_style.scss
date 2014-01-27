@@ -323,15 +323,18 @@ form{
 
 	a.twitter{
 		margin:0px auto 10px;
+		display: block;
 	}
 	
 	.connect{
-		-webkit-flex-flow: column wrap;
-		flex-flow: column wrap;
-		margin: 0 auto; 
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		
 		
 		form {
 			padding: 0 5px;
+			margin: 0 auto; 
 			
 			input[type="submit"] {
 				padding: 8px 4px;
