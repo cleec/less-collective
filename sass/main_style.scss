@@ -334,7 +334,9 @@ form{
 		
 		form {
 			padding: 0 5px;
-			margin: 0 auto; 
+			margin: 0 auto;
+			display: block;
+			width: 250px; 
 			
 			input[type="submit"] {
 				padding: 8px 4px;
