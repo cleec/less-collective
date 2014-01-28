@@ -144,33 +144,29 @@ nav {
 	text-transform: uppercase; 
     position: relative;  
  
-}
-
-nav ul{
+  ul{
 	padding: 0;
 	margin: 15px auto;
 	width: 100px; 
 	
 }
 
-nav li{
+li{
 	float: left;
 	display: inline;
 	width: 100%;
-}
-
-li.nav-item{
+	&.nav-item{
 	padding-top: 9px;
 }
-
-nav a {  
+}
+a {  
 	display: block;
 	text-align: center;
 	text-decoration: none;
 	margin: 0 auto;
 	width: 40px;
     } 
-   
+}
 
 
 .lc-icon{
