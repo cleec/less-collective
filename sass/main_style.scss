@@ -112,19 +112,22 @@ input:focus{
 /* === BACKGROUND === */
 
 
-.dark-bg{
-	background-color: black;
+.main-bg {
+	background-color: #3a3a3a;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
 
-.light-bg{
-	background-color:#dbdbdb;
+.dark-bg{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	background-color: #000;
 }
+
+
+
 
 /* === NAV === */
 
