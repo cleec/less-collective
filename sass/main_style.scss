@@ -27,6 +27,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background-color: #f5f5f5;
    
 }
 ::-moz-selection {
@@ -111,19 +112,26 @@ input:focus{
 
 /* === BACKGROUND === */
 
-
-.main-bg {
-	background-color: #3a3a3a;
+.bg { 
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
 
-.dark-bg{
-	margin: 0;
-	padding: 0;
-	width: 100%;
+.main-bg {
+	background-color: #3a3a3a;
+	@extend .bg;
+}
+
+.dark-bg {
 	background-color: #000;
+	@extend .bg;
+}
+
+light-bg {
+	background-color: #f5f5f5;
+	@extend .bg;
+	
 }
 
 
@@ -247,8 +255,6 @@ a.twitter{
 
 section{
 	width:70%;
-	background-color: blue;
-	height: 150px;
 }
 
 /* === MailChimp === */
