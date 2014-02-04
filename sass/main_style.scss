@@ -141,7 +141,7 @@ light-bg {
 
 nav.top-bar{
 
-	margin: 100px auto 0;
+	margin: 25px auto 0;
 
 }
 
@@ -158,18 +158,19 @@ nav {
   ul{
 	padding: 0;
 	margin: 15px auto;
-	width: 100px; 
-	
+	width: 500px; 
+	}
+
+	li{
+		float: left;
+		display: inline;
+		width: 120px;
+		&:last-child {margin-right: 10px;}
+		&.nav-item {
+		padding-top: 9px;
+	}
 }
 
-li{
-	float: left;
-	display: inline;
-	width: 100%;
-	&.nav-item{
-	padding-top: 9px;
-}
-}
 a {  
 	display: block;
 	text-align: center;
