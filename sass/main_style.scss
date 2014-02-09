@@ -1,6 +1,5 @@
 @import 'bourbon/bourbon';
 @import 'colors';
-@import 'flex-box';
 @import 'project-card';
 
 
@@ -148,7 +147,8 @@ nav.top-bar{
 
 }
 
-nav {    
+nav {
+	display: inline-block;    
     width: 100%;  
   	font-family: "proxima-nova", sans-serif;
 	color: #dbdbdb;
@@ -254,11 +254,6 @@ a.twitter{
 
 .border{
 	border: 1px dashed red;
-}
-
-
-section{
-	width:70%;
 }
 
 /* === MailChimp === */
