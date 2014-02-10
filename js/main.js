@@ -17,8 +17,11 @@ $(document).ready(function() {
 	  projectHTML += "<li><a href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>" + 
 	  "<a href='#' onclick='loadProject(" + project.id + ")'>" + project.name + "</a></li>";
 	}
+	
 	$(".projects").html(projectHTML);
 	});
+	
+
 });
 
 
