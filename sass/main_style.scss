@@ -2,8 +2,6 @@
 @import 'colors';
 @import 'project-card';
 
-
-
 /*
  * HTML5 Boilerplate
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -15,15 +13,6 @@
    ========================================================================== */
 html{
 	background: #f5f5f5;
-}
-
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
 }
 
 body {
@@ -140,15 +129,10 @@ light-bg {
 	
 }
 
-
-
-
 /* === NAV === */
 
 nav.top-bar{
-
 	margin: 35px auto 0;
-
 }
 
 nav {
