@@ -1,11 +1,14 @@
 
-// Loads Behance Feed
+// Loads Behance Feed			
+			
+$(document).ready(function() {
 
-var username01 = "calebchesnut",
+	var username01 = "calebchesnut",
     username02 = "stephenpolitte",
     username03 = "joeboyle";
 			
-$(document).ready(function() {
+	var username = ["calebchesnut", "stephenpolitte", "joeboyle"];	
+
 	// Set behance api key
 	behanceAPI.setKey(behancekey);
 	
@@ -25,28 +28,7 @@ $(document).ready(function() {
 });
 
 
-/*
-
-<script id="entry-template" type="text/x-handlebars-template">
-  template content
-</script>
+// Trying out Skrollr
 
 
-var source   = $("#entry-template").html();
-var template = Handlebars.compile(source);
-
-
-var context = {title: "My New Post", body: "This is my first post!"}
-var html    = template(context);
-
-
-<div class="entry">
-  <h1>My New Post</h1>
-  <div class="body">
-    This is my first post!
-  </div>
-</div>
-
-
-project-id : "project.id" 
-*/
+var s = skrollr.init();
