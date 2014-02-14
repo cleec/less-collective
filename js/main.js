@@ -18,7 +18,7 @@ $(document).ready(function() {
 		for(var i=0; i<projectlist.length; i++) {
 			var project = projectlist[i];
 	  projectHTML += "<li><a href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>" + 
-	  "<a href='#' onclick='loadProject(" + project.id + ")'>" + project.name + "</a></li>";
+	  "<a class='project-name'  href='#' onclick='loadProject(" + project.id + ")'>" + project.name + "</a></li>";
 	}
 	
 	$(".projects").html(projectHTML);
