@@ -18,7 +18,7 @@ $(document).ready(function() {
 		for(var i=0; i<projectlist.length; i++) {
 			var project = projectlist[i];
 	  projectHTML += "<li><a href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>" + 
-	  "<a class='project-name'  href='#' onclick='loadProject(" + project.id + ")'>" + project.name + "</a></li>";
+	  "<a class='project-name'  href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.owners[0].images[50] + "'>" + project.fields[0] + "</a></li>";
 	}
 	
 	$(".projects").html(projectHTML);
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 });
 
-
+		
 // Trying out Skrollr
 
 ( function( $ ) {
