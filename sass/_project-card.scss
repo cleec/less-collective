@@ -24,10 +24,17 @@
 			img {
 				width: 25px;
 				margin-right: 5px;
+				float: left;
 			}
 		}
 	}
-	
-	
 }
 
+
+.owner {
+	font-weight: bold
+}
+
+.field {
+	display: inline-block;
+}
