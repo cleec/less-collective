@@ -139,12 +139,13 @@ nav {
 	display: inline-block;    
     width: 100%;  
   	font-family: "proxima-nova", sans-serif;
-	color: #dbdbdb;
-	font-size: 1em;
-	letter-spacing: 0.2em;
+	color: #f5f5f5;
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
 	font-weight: 800;
 	text-transform: uppercase; 
-    position: relative;  
+    position: relative;
+      
  
   ul{
 	padding: 0;
@@ -159,17 +160,21 @@ nav {
 		&:last-child {margin-right: 10px;}
 		&.nav-item {
 		padding-top: 9px;
+		}
 	}
-}
-
-a {  
+	
+	a {  
 	display: block;
 	text-align: center;
 	text-decoration: none;
 	margin: 0 auto;
 	width: 40px;
+	color: #b3b3b1;
+	&:hover {color: #f5f5f5;}
     } 
+
 }
+
 
 
 .lc-icon{
