@@ -39,3 +39,11 @@ $(document).ready(function() {
         }
     });
 } )( jQuery );
+
+
+// Nav
+
+$("#explore-nav").hover(function(){
+	$(".side-nav").toggle("drop");
+});
+
