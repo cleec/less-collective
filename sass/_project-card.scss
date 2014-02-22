@@ -4,6 +4,7 @@
 	@include flex-wrap(wrap);
 	@include justify-content (center);
 	margin: 50px 0 0 0;
+	padding: 0 60px;
 	li {
 		list-style: none;
 		font-size:  10px;
