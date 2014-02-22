@@ -201,6 +201,29 @@ nav {
 	color: $white;
 	text-transform: uppercase;
 	text-align: center;
+	
+	h1 {
+		margin: 10px auto;
+	}
+	
+	h4 {
+		font-weight: normal;
+		letter-spacing: .5px;
+		margin: 0 auto;
+	}
+	
+	a {
+		color: $white;
+		font-family: $font;
+		text-decoration: none;
+		border: 1px solid;
+		padding: 12px;
+		letter-spacing: 0.5px;
+		font-weight: 300;
+		font-size: .7em;
+		margin: 35px auto;
+		display: inline-block;
+	}
 }
 
 #header-img {
