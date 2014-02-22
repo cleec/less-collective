@@ -203,13 +203,16 @@ nav {
 	text-align: center;
 	
 	h1 {
-		margin: 10px auto;
+		margin: 10px auto 0;
+		letter-spacing: 0.6px;
+		font-size: 2.3em;
+		line-height: 45px;
 	}
 	
 	h4 {
-		font-weight: normal;
-		letter-spacing: .5px;
+		font-weight: 300;
 		margin: 0 auto;
+		letter-spacing: 0.6px;
 	}
 	
 	a {
