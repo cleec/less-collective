@@ -43,7 +43,28 @@ $(document).ready(function() {
 
 // Nav
 
+$("#overlayInit").click(function(){
+	$(".overlay").fadeIn("slow")
+});
+
+$("#overlayClose").click(function(){
+	$(".overlay").fadeOut("slow")
+});
+
+
 $("#explore-nav").hover(function(){
 	$(".side-nav").toggle("drop");
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
