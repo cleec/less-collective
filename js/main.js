@@ -44,6 +44,6 @@ $(document).ready(function() {
 // Nav
 
 $("#explore-nav").hover(function(){
-	$('ul', this).stop().toggle("drop");
+	$(".side-nav").toggle("drop");
 });
 
